@@ -14,6 +14,11 @@
 	    	   controller:	'MainCtrl',
 	           controllerAs: 'main'
 	       	 }).
+	    	 when('/about', {
+	    	   templateUrl: 'templates/about/about.html',
+	    	   controller:	'MainCtrl',
+	           controllerAs: 'main'
+	       	 }).
 	         otherwise({
 	           redirectTo: '/'
 	         });
