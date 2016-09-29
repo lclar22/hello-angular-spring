@@ -9,13 +9,13 @@
     function Routes($routeProvider) {
 
     	$routeProvider.
-	    	 when('/', {
-	    	   templateUrl: 'templates/main/main.html',
-	    	   controller:	'MainCtrl',
-	           controllerAs: 'main'
-	       	 }).
 	    	 when('/about', {
 	    	   templateUrl: 'templates/about/about.html',
+	    	   controller:	'AboutCtrl',
+	           controllerAs: 'about'
+	       	 }).
+	    	 when('/', {
+	    	   templateUrl: 'templates/main/main.html',
 	    	   controller:	'MainCtrl',
 	           controllerAs: 'main'
 	       	 }).
