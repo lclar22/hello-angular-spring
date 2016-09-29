@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:54:27 -0400] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:54:27 -0400] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:55:14 -0400] "GET / HTTP/1.1" 404 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:31 -0400] "GET /MyProject HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:31 -0400] "GET /MyProject/ HTTP/1.1" 200 753 http-bio-8080-exec-2 86
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:31 -0400] "GET /MyProject/js/app.js HTTP/1.1" 200 2443 http-bio-8080-exec-3 7
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:32 -0400] "GET /MyProject/style/lib.css HTTP/1.1" 200 54397 http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:32 -0400] "GET /MyProject/style/app.css HTTP/1.1" 200 672 http-bio-8080-exec-6 10
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:32 -0400] "GET /MyProject/js/lib.js HTTP/1.1" 200 3560829 http-bio-8080-exec-5 656
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:33 -0400] "GET /MyProject/config HTTP/1.1" 302 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:33 -0400] "GET /MyProject/templates/header.html HTTP/1.1" 200 242 http-bio-8080-exec-8 4
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:33 -0400] "GET /MyProject/templates/main/main.html HTTP/1.1" 200 1796 http-bio-8080-exec-7 5
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:33 -0400] "GET /MyProject/config/ HTTP/1.1" 404 949 http-bio-8080-exec-7 5
+0:0:0:0:0:0:0:1 - - [28/Sep/2016:20:56:34 -0400] "GET /MyProject/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 65452 http-bio-8080-exec-7 7
