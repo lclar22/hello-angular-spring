@@ -64,6 +64,24 @@
 
 	angular
 		.module('app')
+		.controller('AboutCtrl', AboutCtrl);
+
+	AboutCtrl.$inject = ['$window', 'AboutService'];
+	function AboutCtrl($window, AboutService) {
+
+		var vm = this;
+
+		vm.viewLocation = 'webapp/templates/about/about.html';
+
+		return vm;
+	}
+
+})();
+(function() {
+	'use strict';
+
+	angular
+		.module('app')
 		.controller('MainCtrl', MainCtrl);
 
 	MainCtrl.$inject = ['$window', 'MainService'];
@@ -76,6 +94,22 @@
 		return vm;
 	}
 
+})();
+(function() {
+	'use strict';
+
+	angular
+		.module('app')
+		.service('AboutService', AboutService);
+
+	AboutService.$inject = ['$http'];
+	function AboutService($http) {
+
+		var service = {};
+
+		return service;
+	}
+	
 })();
 (function() {
 	'use strict';
@@ -124,6 +158,11 @@
     function Routes($routeProvider) {
 
     	$routeProvider.
+	    	 when('/about', {
+	    	   templateUrl: 'templates/about/about.html',
+	    	   controller:	'AboutCtrl',
+	           controllerAs: 'about'
+	       	 }).
 	    	 when('/', {
 	    	   templateUrl: 'templates/main/main.html',
 	    	   controller:	'MainCtrl',
